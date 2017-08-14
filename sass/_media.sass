@@ -1,0 +1,304 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.header-main-content	
+		.header-h2
+			font-size: 53px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.header-main-content	
+		.header-h2
+			font-size: 40px
+			opacity: 0.8
+			font-weight: 200
+		.header-text
+			font-size: 15px
+			margin-top: 3em
+
+	.first-section
+		height: 600px
+		.content-left
+			z-index: 999
+			width: 60%
+			margin-left: 20%
+			h2
+				font-size: 37px
+			p
+				font-size: 15px
+		.img-right
+			img
+				display: none
+	.second-section
+		height: 1100px
+		background-size: contain
+		background-color: #f6f5f3
+		.colums-second-section
+			display: flex
+			flex-direction: column
+			align-items: center
+			text-align: center
+			justify-content: center
+			padding-bottom: 10em
+		.title-second-section
+			padding-top: 5em
+			h2
+				font-size: 37px
+		.item
+			margin-top: 3em
+			p
+				margin: 0
+				padding: 0
+			img
+				margin: 1em
+
+	.third-section
+		background-size: cover
+		height: 600px
+		display: flex
+		width: 100%
+		justify-content: center
+		.third-section-main-text
+			width: 100%
+			position: relative
+			display: flex
+			height: 400px
+			flex-direction: column
+			justify-content: center
+			font-size: 12px
+			.third-text
+				margin-bottom: 2em
+			h4, h2, p
+				margin-top: 5px
+				padding-top: 5px
+				width: 65%
+			p
+				width: 50%
+				font-size: 14px
+
+	.fourth-section
+		height: 650px
+		.colums-a
+			.item
+				p
+					font-size: 12px
+				p, h2, span
+					margin-top: 0
+					padding-top: 0
+		.img-partners
+			position: relative
+			height: 200px
+			padding-bottom: 150px
+	.fifth-section
+		background-size: contain
+		height: 530px
+		background-repeat: no-repeat
+		background-position-y: bottom //Выравнивание bg по низу
+		background-color: #f6f5f3
+		.fifth-section-main-text
+			font-size: 14px
+			margin-bottom: 5em
+	
+	.sixth-section
+		height: 600px
+		.form-button
+			display: flex
+			flex-direction: column
+			align-items: center
+			text-align: center
+			width: 100%
+			padding: 0
+			margin-top: 7em
+			margin-left: 0
+			.button
+				margin-right: 0px
+				label
+					display: none
+		.ps
+			margin-top: 5em
+
+	.footer-content
+		background-size: contain
+		height: 400px
+		background-repeat: no-repeat
+		.footer-content-two
+			display: flex
+			.item
+				font-size: 14px
+				h2
+					font-size: 20px
+			.min
+				width: 150px
+			.start
+				display: none
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.header-main-content	
+		.header-h2
+			font-size: 35px
+			opacity: 0.8
+			font-weight: 200
+		.header-text
+			font-size: 14px
+			margin-top: 3em
+
+	.first-section
+		height: 600px
+		.content-left
+			z-index: 999
+			width: 80%
+		.img-right
+			img
+				display: none
+
+	.second-section
+		height: 1100px
+		background-size: contain
+		background-color: #f6f5f3
+		.colums-second-section
+			display: flex
+			flex-direction: column
+			align-items: center
+			text-align: center
+			justify-content: center
+			padding-bottom: 10em
+		.title-second-section
+			padding-top: 5em
+			h2
+				font-size: 33px
+		.item
+			margin-top: 3em
+			p
+				margin: 0
+				padding: 0
+			img
+				margin: 1em
+
+	.third-section
+		background-size: cover
+		height: 600px
+		display: flex
+		width: 100%
+		justify-content: center
+		.third-section-main-text
+			width: 100%
+			position: relative
+			margin-right: 5em
+			display: flex
+			height: 400px
+			flex-direction: column
+			justify-content: center
+			font-size: 12px
+			.third-text
+				margin-bottom: 2em
+			h4, h2, p
+				margin-top: 5px
+				padding-top: 5px
+				width: 65%
+			p
+				width: 50%
+
+	.fourth-section
+		height: 650px
+		.colums-a
+			.item
+				p
+					font-size: 12px
+				p, h2, span
+					margin-top: 0
+					padding-top: 0
+		.img-partners
+			position: relative
+			height: 200px
+			padding-bottom: 150px
+	.fifth-section
+		background-size: contain
+		height: 530px
+		background-repeat: no-repeat
+		background-position-y: bottom //Выравнивание bg по низу
+		background-color: #f6f5f3
+		.fifth-section-main-text
+			font-size: 14px
+	
+	.sixth-section
+		height: 600px
+		.form-button
+			display: flex
+			flex-direction: column
+			align-items: center
+			text-align: center
+			width: 100%
+			padding: 0
+			margin-top: 7em
+			margin-left: 0
+			.button
+				margin-right: 0px
+				label
+					display: none
+		.ps
+			margin-top: 5em
+
+	.footer-content
+		background-size: contain
+		height: 400px
+		background-repeat: no-repeat
+		.footer-content-two
+			display: flex
+			.item
+				font-size: 14px
+				h2
+					font-size: 20px
+			.min
+				width: 150px
+			.start
+				display: none
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.header-main-content	
+		.header-h2
+			font-size: 25px
+			opacity: 1
+			font-weight: 300
+		.header-text
+			font-size: 14px
+			margin-top: 3em
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

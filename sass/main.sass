@@ -1,0 +1,575 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "media" 
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	margin: 0
+	.header
+		background-size: cover
+		position: relative
+		height: 100vh	
+		min-height: 600px
+		widht: 100%
+		display: flex
+		align-items: center
+		text-align: center
+
+.header-main-content
+	display: flex
+	align-items: center
+	flex-direction: column
+	position: relative
+	width: 100%
+	text-align: center
+	bottom: 2em
+	.header-h2
+		font-size: 65px
+		width: 55%
+		font-weight: 100
+		text-align: center
+		color: $titles
+		opacity: 0.5
+		font-family: 'Exo', sans-serif
+		white-space: nowrap
+		line-height: 75px
+
+.header-button-play
+	.button-play
+		position: relative
+		width: 59px
+		height: 59px
+		background-color: #8084a2
+		border-radius: 50%
+		margin: 3em
+		transition: background-color 0.1s ease
+		.fa-play
+			color:#fff
+			text-align: center
+			font-size: 23px
+			line-height: 58px
+			margin-left: 5px
+		&:hover
+			opacity: 0.9
+
+.header-button-try
+	width: 190px
+	height: 50px
+	border-radius: 3px
+	background-color: $accent
+	transition: background-color 0.5s ease
+	a
+		color: #fff
+		text-transform: uppercase
+		font-weight: 400
+		text-align: center
+		line-height: 50px
+		letter-spacing: 3.5px
+		&:hover
+			text-decoration: none
+			opacity: 0.8
+	&:hover
+		background-color: $accent
+		opacity: 0.9
+
+.header-text
+	top: 0.5em
+	p
+		font-size: 16px
+		opacity: 0.5
+		font-weight: 400
+		text-align: center
+
+.first-section
+	height: 724px
+	widht: 100%	
+	.img-right
+		float: right
+		position: absolute
+		right: 0
+		display: block
+		img
+			z-index: 0
+			min-width: 100%
+			height: auto
+			width: auto
+
+
+
+	.content-left
+		float: left
+		width: 40%
+		margin: 5em
+		position: absolute
+		.h4-design
+			color: $accent
+			letter-spacing: 3px
+			text-transform: uppercase
+			text-align:left
+			font-weight: 500
+		.h2-main
+			color: $titles
+			font-weight: 500
+			font-size: 25px
+			text-align: left
+			line-height: 50px
+			span
+				color: $accent
+				margin-left: 0.2em
+		.p-text
+			color: $titles
+			opacity: 0.7
+			font-weight: 500
+			text-align: left
+			p
+				padding: 0.7em 0		
+
+.second-section
+	background-size: contain
+	position: relative
+	background-repeat: no-repeat
+	min-height: 600px
+	height: 70vh
+	widht: 100%
+	clear: noth
+	margin: 0
+	padding: 0
+	.title-second-section
+		text-align: center
+		display: flex
+		flex-direction: column
+		width: 100%
+		height: 50%
+		padding-top: 10em
+		h4
+			margin: 0
+			color: $accent
+			letter-spacing: 3px
+			text-transform: uppercase
+			text-align:left
+			font-weight: 500
+			opacity: 0.8
+		h2
+			margin: 0
+			transform: scaleX(1.0014)
+			text-align: center
+			color: $titles
+			font-weight: 500
+			font-size: 40px
+			opacity: 0.9
+
+.colums-second-section
+	display: flex
+	justify-content: space-around
+	height: 300px
+	.item
+		width: 330px
+		display: flex
+		justify-content: space-around
+		height: 250px
+		align-items: center
+		text-align: center
+		flex-direction: column
+		img
+			height: 65px
+			width: 65px
+		h2
+			margin: 0
+			transform: scaleX(1.0014)
+			color: $titles
+			font-weight: 500
+			font-size: 22px
+			opacity: 0.9
+		p
+			color: $titles
+			opacity: 0.7
+			font-weight: 500
+
+.third-section
+	height: 550px
+	width: 100%
+	position: relative
+	background-size: contain
+	background-repeat: no-repeat
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	.third-section-main-text
+		width: 40%
+		margin-left: 40em
+		.h4-design
+			color: $accent
+			letter-spacing: 3px
+			text-transform: uppercase
+			text-align:left
+			font-weight: 500
+		.h2-third-title
+			color: $titles
+			font-weight: 500
+			font-size: 25px
+			text-align: left
+			line-height: 50px
+			width: 80%
+			span
+				color: $accent
+				margin-left: 0.2em
+		.third-text
+			color: $titles
+			opacity: 0.7
+			font-weight: 500
+			text-align: left
+
+.fourth-section
+	height: 90vh
+	width: 100%
+	min-height: 540px
+	.colums-a
+		display: flex
+		justify-content: space-around
+		height: 500px
+		align-items: center
+		text-align: center
+		padding-top: 1em
+		.item
+			width: 300px
+			display: flex
+			justify-content: space-around
+			height: 350px
+			align-items: center
+			text-align: center
+			flex-direction: column
+			.kvadrat
+				border-style: solid
+				border-width: 2px
+				border-color:#1d1e24
+				background-color:#4e4e5e
+				width: 76px
+				height: 76px
+			h2
+				color: #fff
+				font-weight: 500
+				font-size: 22px
+				transform: scaleX(1.0014)
+				text-align: center
+				margin: 0
+				padding: 0
+			span
+				font-size: 16px
+				font-weight: 500
+				color: $accent
+				opacity: 0.8
+				transform: scaleX(1.0014)
+				text-align: center
+				margin: 0
+				padding: 0
+			p
+				font-style: italic
+				font-weight: 400
+				color: #fff
+				text-align: center
+				font-size: 16px
+				opacity: 0.8
+	.img-partners
+		display: flex
+		justify-content: space-around
+		align-items: center
+		text-align: center
+		bottom: 0
+		position: relative
+		padding: 4em
+		img
+			opacity: 0.9
+
+.fifth-section
+	height: 620px
+	width: 100%
+	.fifth-section-main-text
+		display: flex
+		text-align: center
+		justify-content: center
+		padding-top: 5em
+		align-items: center
+		height: 300px
+		flex-direction: column
+		h4
+			margin: 0
+			color: $accent
+			letter-spacing: 3px
+			text-transform: uppercase
+			text-align:left
+			font-weight: 500
+			opacity: 0.8
+		h2
+			margin: 0
+			transform: scaleX(1.0014)
+			text-align: center
+			color: $titles
+			font-weight: 500
+			font-size: 40px
+			opacity: 0.9
+		p
+			color: $titles
+			opacity: 0.7
+			font-weight: 500
+			width: 60%
+
+.sixth-section
+	width: 100%
+	height: 450px
+	background-color: #323969
+	.sixth-section-main-text
+		display: flex
+		text-align: center
+		justify-content: center
+		flex-direction: column
+		width: 100%
+		height: 150px
+		h4
+			margin: 0
+			color: $accent
+			letter-spacing: 3px
+			text-transform: uppercase
+			text-align:left
+			font-weight: 500
+			opacity: 0.9
+		h2
+			margin: 0
+			transform: scaleX(1.0014)
+			text-align: center
+			color: #fff
+			font-weight: 500
+			font-size: 40px
+
+	.form-button
+		height: 120px
+		display: flex
+		align-items: center
+		text-align: center
+		width: 100%
+		justify-content: center
+		margin-top: 2em
+		margin-left: 3em
+		.item
+			input
+				margin: 1em
+				width: 260px
+				height: 50px
+				border-radius: 3px
+				border-width: 1px
+				border-color: rgba(255, 255, 255, 0.2)
+				border-style: solid
+				background-color: #474d78
+				padding: 10px 20px
+				color: #fff
+			::-moz-placeholder
+				color: #fff
+				text-transform: uppercase
+				font-weight: 400
+				opacity: 0.8
+			::-webkit-input-placeholder
+				color: #fff
+				text-transform: uppercase
+				font-weight: 400
+				opacity: 0.8
+			.button-try
+				border-radius: 3px
+				border-width: 1px
+				border-color:#ff6d6d
+				border-style: solid
+				background-color:#ff6d6d
+				box-shadow: 0px 3px 3px 0px rgba(14, 15, 15, 0.25)
+				width: 250px
+				height: 45px
+				margin-left: 1em
+				color: rgba(246, 245, 243, 0.8)
+				transform: scaleY(1.1074)
+				text-decoration: none
+				line-height: 15px
+				font-weight: 400
+				text-transform: uppercase
+				font-size: 15px
+				transition: background-color 0.5 ease
+				&:hover
+					text-decoration: none
+					opacity: 0.9
+			a
+				&:hover
+					text-decoration: none
+
+.button
+	position: relative
+	margin-bottom: 2.2em
+	margin-right: 6.5em
+	label
+		color:#fff
+		margin-bottom: 30px
+	img
+		margin-right: 1em
+
+.ps
+	display: flex
+	align-items: center
+	text-align: center
+	justify-content: center
+	margin-top: 1em
+	span
+		color: #fff
+		display: flex
+		text-align: center
+		font-weight: 400
+		text-align: left
+		opacity: 0.6
+		margin-top: 1.5em
+		a
+			color: #fff
+			text-decoration: underline
+			margin-left: 5px
+
+.footer-content
+	width: 100%
+	height: 370px
+
+.footer-content-two
+	display: flex
+	justify-content: space-around
+	align-items: center
+	background-size: cover
+	width: 80%
+	left: 0
+	position: relative
+	.item
+		width: 200px
+		height: 300px
+		margin-top: 6em
+		.subscribe-icons
+			text-align: center
+			.fa
+				font-size: 23px
+				transition: color 0.5 ease
+				padding: 0.5em
+				opacity: 0.8
+				color: rgba(40, 40, 40, 0.56)
+			.fa-dribbble
+				&:hover
+					color: #ea4c89
+			.fa-facebook
+				&:hover
+					color: #3b5998
+			.fa-google-plus
+				&:hover
+					color: #dc4a3d
+			.fa-twitter
+				&:hover
+					color: #41abe1
+		.email-two
+			background: url(/img/subscribe-arrow.png) right no-repeat
+			width: 260px
+
+
+	ul
+		width: 200px
+		margin: 0
+		padding: 0
+		li
+			text-align: left
+			text-decoration: none
+			list-style-type: none
+			a
+				font-weight: 500
+				text-align: left
+				color: rgba(40, 40, 40, 0.56)
+				font-size: 14px
+				transition: color 0.5 ease
+				&:hover
+					text-decoration: none
+					color: #aaa
+
+	h2
+		color: rgba(40, 40, 40, 0.9)
+		font-size: 22px
+		font-weight: 500
+		transform: scaleX(1.0014)
+	.start
+		h2
+			font-size: 22px
+			transform: scaleX(1.0014)
+			text-align: left
+			font-weight: 500
+		p
+			font-weight: 500
+			text-align: left
+			color: rgba(40, 40, 40, 0.56)
+			font-size: 14px
+
+.get-news
+	input
+		width: 260px
+		height: 50px
+		text-align: left
+		border-radius: 3px
+		border-width: 1px
+		border-color: #4e4e5e
+		border-style: solid
+		background-color: rgba(141, 141, 141, 0.2)
+		padding: 10px 20px
+		opacity: 0.4
+	::-moz-placeholder
+		rgba(0, 0, 0, 0.4)
+		text-transform: uppercase
+		font-weight: 400
+		opacity: 0.8
+	::-webkit-input-placeholder
+		rgba(0, 0, 0, 0.4)
+		text-transform: uppercase
+		font-weight: 400
+		opacity: 0.8
+
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+@import "media" 
